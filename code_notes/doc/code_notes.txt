@@ -1,0 +1,64 @@
+*code_notes.txt*    A code note / scratch pad plugin
+
+===============================================================================
+CONTENTS                                                  *code_notes-contents*
+
+    1. Usage ............... |code_notes|
+    2. Mappings ............ |code_notesMappings|
+        2.1 CNoteOpen ...... |CNoteOpen|
+        2.2 CNoteCopy ...... |cnc|
+        2.3 CNoteReplace ... |cnr|
+        2.4 CNoteDelete .... |cnd|
+    3. Configurations ...... |code_notesConfigurations|
+    4. License ............. |code_notesLicense|
+    5. Bugs ................ |code_notesBugs|
+    6. Contributing ........ |code_notesContributing|
+    7. Changelog ........... |code_notesChangelog|
+    8. Credits ............. |code_notesCredits|
+
+===============================================================================
+1. Usage                                                           *code_notes*
+
+What is Code Notes?
+
+Code Notes is a scratch pad used to store semi-permanent notes while coding. 
+It opens a split that allows you to copy and paste line(s) from your original
+file into the split with some simple key strokes. After the line(s) have been
+copied, it returns you back to the same place in your original file, allowing
+you to seamlessly continue coding. Used mostly for storing variable names or
+function definitions, but can be used to store any type of note.
+
+2. Mappings                                                *code_notesMappings*
+
+-------------------------------------------------------------------------------
+2.1 CNoteOpen
+
+:CNoteOpen                                                          *CNoteOpen*
+    Opens a new split that is used to store your notes. After opening the split,
+    it will return you back to your original file in the same place.
+
+-------------------------------------------------------------------------------
+2.1 Code Note Copy
+
+"<localleader>cnc"                                                       *cnc*
+    Copies the line(s) that you are on or have visually selected over to the
+    note. The copied line will be inserted into the note with the line number
+    prefixing it. It will return you back to the original file in the same
+    location.
+     
+-------------------------------------------------------------------------------
+2.2 Code Note Replace
+
+"<localleader>cnr"                                                       *cnr*
+    Replaces the last matching line in the note. This will copy the line(s)
+    that are either on or are visually selected and replace the last entry
+    in the note that matches the line number.
+
+-------------------------------------------------------------------------------
+2.3 Code Note Delete
+
+"<localleader>cnd"                                                       *cnd*
+    Deletes all entries of a line in the note. This will search through the
+    entire note and delete all occurances of the line number.
+
+3. Mappings                                                *code_notesMappings*
