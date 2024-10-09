@@ -3,13 +3,21 @@
 ===============================================================================
 CONTENTS                                                  *code_notes-contents*
 
-    1. Usage ............... |code_notes|
-    2. Mappings ............ |code_notesMappings|
-        2.1 CNoteOpen ...... |CNoteOpen|
-        2.2 CNoteCopy ...... |cnc|
-        2.3 CNoteReplace ... |cnr|
-        2.4 CNoteDelete .... |cnd|
-    3. Configurations ...... |code_notesConfigurations|
+    1. Usage ................................. |code_notes|
+    2. Mappings .............................. |code_notesMappings|
+        2.1 CNoteOpen ........................ |CNoteOpen|
+        2.2 CNoteCopy ........................ |cnc|
+        2.3 CNoteReplace ..................... |cnr|
+        2.4 CNoteDelete ...................... |cnd|
+    3. Configurations ........................ |code_notesConfigurations|
+        3.1 CNotes_Auto_Save ................. |CNotes_Auto_Save|
+        3.1 CNotes_Auto_Open ................. |CNotes_Auto_Open|
+        3.1 CNotes_Debug ..................... |CNotes_Debug|
+        3.1 CNotes_Split_Size_Operation ...... |CNotes_Split_Size_Operation|
+        3.1 CNotes_Split_Size_Value .......... |CNotes_Split_Size_Value|
+        3.1 CNotes_Split_Type ................ |CNotes_Split_Type|
+        3.1 CNotes_Split_Size_Type ........... |CNotes_Split_Size_Type|
+        3.1 CNotes_Split_Loc ................. |CNotes_Split_Loc|
     4. License ............. |code_notesLicense|
     5. Bugs ................ |code_notesBugs|
     6. Contributing ........ |code_notesContributing|
@@ -38,27 +46,108 @@ function definitions, but can be used to store any type of note.
     it will return you back to your original file in the same place.
 
 -------------------------------------------------------------------------------
-2.1 Code Note Copy
+2.2 Code Note Copy
 
-"<localleader>cnc"                                                       *cnc*
+"<localleader>cnc"                                                        *cnc*
     Copies the line(s) that you are on or have visually selected over to the
     note. The copied line will be inserted into the note with the line number
     prefixing it. It will return you back to the original file in the same
     location.
      
 -------------------------------------------------------------------------------
-2.2 Code Note Replace
+2.3 Code Note Replace
 
-"<localleader>cnr"                                                       *cnr*
+"<localleader>cnr"                                                        *cnr*
     Replaces the last matching line in the note. This will copy the line(s)
     that are either on or are visually selected and replace the last entry
     in the note that matches the line number.
 
 -------------------------------------------------------------------------------
-2.3 Code Note Delete
+2.4 Code Note Delete
 
-"<localleader>cnd"                                                       *cnd*
+"<localleader>cnd"                                                        *cnd*
     Deletes all entries of a line in the note. This will search through the
     entire note and delete all occurances of the line number.
 
-3. Mappings                                                *code_notesMappings*
+===============================================================================
+3. Configurations                                    *code_notesConfigurations*
+
+-------------------------------------------------------------------------------
+3.1 g:CNotes_Auto_Save                                       *CNotes_Auto_Save*
+
+Set this to 0 to disable the autosave of the Code Note split when the original
+file is saved.
+    let g:CNotes_Auto_Save = 0
+
+-------------------------------------------------------------------------------
+3.2 g:CNotes_Auto_Open                                       *CNotes_Auto_Open*
+
+Set this to 0 to disable the Code Note from auto opening when any of the Code
+Note shortcut keys are used. If this is disabled, you must run CNoteOpen before
+you can use any Code Note shortcut key.
+    let g:CNotes_Auto_Open = 0
+
+-------------------------------------------------------------------------------
+3.3 g:CNotes_Debug                                               *CNotes_Debug*
+
+Set this to 1 to turn on debug mode which will add multiple echo messages for 
+debugging purposes.
+
+-------------------------------------------------------------------------------
+3.4 g:CNotes_Split_Size_Operation                 *CNotes_Split_Size_Operation*
+
+Set this to percentage to specify the height or width to be a percentage of 
+the main window for the Code Note. Set this to static to specify the actual 
+size of the Code Note.
+
+-------------------------------------------------------------------------------
+3.5 g:CNotes_Split_Size_Value                 *CNotes_Split_Size_Value*
+
+Set this to either a percentage of the main window that you want the Code Note 
+to be, or set it to exact size you want to the Code Note to be.
+
+-------------------------------------------------------------------------------
+3.6 g:CNotes_Split_Type                                     *CNotes_Split_Type*
+
+Set this to either vsplit to create a vertical split or just split to create a
+horizontal split for the Code Note.
+
+-------------------------------------------------------------------------------
+3.7 g:CNotes_Split_Size_Type                           *CNotes_Split_Size_Type*
+
+Set this to either vertical to set the width of the split, or horizontal to 
+set the height of the split.
+
+-------------------------------------------------------------------------------
+3.8 g:CNotes_Split_Loc                                       *CNotes_Split_Loc*
+
+Set this to the location that you want the split to be created at.
+
+===============================================================================
+4. License                                                  *code_notesLicense*
+
+===============================================================================
+5. Bugs                                                        *code_notesBugs*
+
+If you find a bug please post it on the issue tracker:
+https://github.com/CombobulateTech/vim_CodeNotes/issues
+
+===============================================================================
+6. Contributing                                        *code_notesContributing*
+
+I'm open to any help or suggestions.
+Feel free to submit a pull request
+https://github.com/CombobulateTech/vim_CodeNotes
+
+===============================================================================
+7. Changelog                                              *code_notesChangelog*
+
+v1.0.0
+    * First release of the plugin
+
+===============================================================================
+8. Credits                                                  *code_notesCredits*
+
+Thought of, developed, and created by Gulo
+
+===============================================================================
