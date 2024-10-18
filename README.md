@@ -25,4 +25,4 @@ Without a plugin manager, you can just copy the files from each of the git folde
 *plugin/code_notes.vim -> ~/.vim/plugin/code_notes/code_notes.vim*
 
 ### Usage
-[Link to vim documentation](code_notes/doc/code_notes.vim)
+[Link to vim documentation](code_notes/doc/code_notes.txt)
