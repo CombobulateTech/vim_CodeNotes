@@ -18,11 +18,11 @@ CONTENTS                                                  *code_notes-contents*
         3.1 CNotes_Split_Type ................ |CNotes_Split_Type|
         3.1 CNotes_Split_Size_Type ........... |CNotes_Split_Size_Type|
         3.1 CNotes_Split_Loc ................. |CNotes_Split_Loc|
-    4. License ............. |code_notesLicense|
-    5. Bugs ................ |code_notesBugs|
-    6. Contributing ........ |code_notesContributing|
-    7. Changelog ........... |code_notesChangelog|
-    8. Credits ............. |code_notesCredits|
+    4. License ............................... |code_notesLicense|
+    5. Bugs .................................. |code_notesBugs|
+    6. Contributing .......................... |code_notesContributing|
+    7. Changelog ............................. |code_notesChangelog|
+    8. Credits ............................... |code_notesCredits|
 
 ===============================================================================
 1. Usage                                                           *code_notes*
@@ -125,6 +125,8 @@ Set this to the location that you want the split to be created at.
 
 ===============================================================================
 4. License                                                  *code_notesLicense*
+
+Same terms as Vim itself (see |license|)
 
 ===============================================================================
 5. Bugs                                                        *code_notesBugs*
