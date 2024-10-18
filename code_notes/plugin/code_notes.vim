@@ -15,9 +15,10 @@ endif
 " Load the plugin
 let g:loaded_code_notes = 1
 
+
 " Load the help files in the .vim/doc directory if it exists
-if isdirectory("~/.vim/doc")
-    execute "helptags ~/.vim/doc"
+if isdirectory($HOME . "/.vim/doc/code_notes")
+    execute "helptags " . $HOME . "/.vim/doc"
 endif
 
 " Set a variable to check if CNoteOpen runs
