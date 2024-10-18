@@ -16,8 +16,8 @@ endif
 let g:loaded_code_notes = 1
 
 " Load the help files in the .vim/doc directory if it exists
-if isdirectory(".vim/doc")
-    execute "helptags .vim/doc"
+if isdirectory("~/.vim/doc")
+    execute "helptags ~/.vim/doc"
 endif
 
 " Set a variable to check if CNoteOpen runs
