@@ -16,7 +16,16 @@ The doc directory contains all of the vim documentation for how code notes works
 
 ## Notes
 ### Installation
-Without a plugin manager, you can just copy the files from each of the git folders into their prospective .vim folders:
+Without a plugin manager, for a simple install, you can create a pack folder in your .vim directory and clone this repo
+
+*mkdir -p ~/.vim/pack/code_notes/start*
+
+*cd ~/.vim/pack/code_notes/start/*
+
+*git clone https://github.com/CombobulateTech/vim_CodeNotes*
+
+
+Without a plugin manager, for a manual install, you can just copy the files from each of the git folders into their prospective .vim folders:
 
 *autoload/code_notes.vim -> ~/.vim/autoload/code_notes/code_notes.vim*
 
