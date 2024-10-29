@@ -22,7 +22,7 @@ if isdirectory($HOME . "/.vim/doc/code_notes")
 endif
 
 " Set a variable to check if CNoteOpen runs
-let b:CNote_Open_Run = 0
+let g:CNote_Open_Run = 0
 
 " ###########################################
 " ######## User assignable variables ########

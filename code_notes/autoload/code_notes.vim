@@ -17,7 +17,7 @@ function! code_notes#code_notes#CNotes_Status()
     endif
 
     " Check to see if CNoteOpen has already ran
-    if !b:CNote_Open_Run
+    if !g:CNote_Open_Run
         " Debug message
         if g:CNotes_Debug
             echom l:Function_Name . " Open_Run has not been set, execute " .
@@ -233,7 +233,7 @@ function! code_notes#code_notes#CNotes_Save()
     endif
 
     " Check to see if the Code Note has been opened
-    if !b:CNote_Open_Run
+    if !g:CNote_Open_Run
         " Debug message
         if g:CNotes_Debug
             echom l:Function_Name . " Code Note is not currently open"
@@ -450,7 +450,7 @@ function! code_notes#code_notes#CNotes_Window_Open(SplitLoc, SplitSizeType, Spli
     let s:CodeNote_File_Buffer = bufnr(expand('%:p'))
 
     " Set a variable to set CNoteOpen has ran
-    let b:CNote_Open_Run = 1
+    let g:CNote_Open_Run = 1
 
     " Check to see if the file is empty
     if getfsize(s:CodeNote_File_Path) < 1
